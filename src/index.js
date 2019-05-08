@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//sem o ReactDom não é possível inserir os componentes na página
+import ReactDOM from 'react-dom'
+import React from 'react'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const elemento = document.getElementById('root')
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//uma vez que a div cujo id = root é obtida, utiliza o ReactDOM para inserir conteúdo na página
+//ReactDOM.render('Olá React', elemento)
+
+ReactDOM.render(<h1>Olá React</h1>, elemento)
