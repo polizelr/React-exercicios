@@ -71,20 +71,33 @@
 //     , elemento)
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
-import ReactDOM from 'react-dom'
-import React from 'react'
+// import ReactDOM from 'react-dom'
+// import React from 'react'
 
 //como não utilizou-se o export default, na importação, os componentes devem vir entre {} (operador de desestruturação)
-import { CompA, CompB as B} from './componentes/DoisComponentes'
+// import { CompA, CompB as B} from './componentes/DoisComponentes'
+
+// const elemento = document.getElementById('root')
+
+// ReactDOM.render(
+//     <div>
+//         <CompA valor="Componente A"></CompA>
+//         <B valor="Componente B"></B>
+//     </div>
+// , elemento)
+
+//Quando um componente é exportado usando export default, pode-se escolher qualquer nome no momento da importação
+//Quando utiliza-se somente export, na importação tem-se que usar exatamente os mesmos nomes. No entanto, pode-se utilizar alias.
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
+import ReactDOM from 'react-dom'
+import React from 'react'
+import MultiElementos from './componentes/MultiElementos'
 
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <CompA valor="Componente A"></CompA>
-        <B valor="Componente B"></B>
+        <MultiElementos></MultiElementos>
     </div>
 , elemento)
-
-//Quando um componente é exportado usando export default, pode-se escolher qualquer nome no momento da importação
-//Quando utiliza-se somente export, na importação tem-se que usar exatamente os mesmos nomes. No entanto, pode-se utilizar alias.
