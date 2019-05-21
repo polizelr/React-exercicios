@@ -105,14 +105,33 @@
 //---------------------------------------------------------------------------------------------------------------------------------------------
 //Uma aplicação em react, nada mais é que uma árvore de componentes: tem-se um componente inicial e, a partir dele, incocam-se outros componentes e assim sucessivamente 
 //e a aplicação será composta com todos os componentes colaborando entre si
+// import ReactDOM from 'react-dom'
+// import React from 'react'
+// import FamiliaSilva from './componentes/FamiliaSilva'
+
+// const elemento = document.getElementById('root')
+
+// ReactDOM.render(
+//     <div>
+//         <FamiliaSilva></FamiliaSilva>
+//     </div>
+// , elemento)
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
 import ReactDOM from 'react-dom'
 import React from 'react'
-import FamiliaSilva from './componentes/FamiliaSilva'
+import Familia from './componentes/Familia'
+import Membro from './componentes/Membro'
 
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <FamiliaSilva></FamiliaSilva>
+        <Familia>
+            <Membro nome="Rafaela" sobrenome=" Polizel"></Membro>
+            <Membro nome="Rosa" sobrenome=" Polizel"></Membro>
+            <Membro nome="Clarice" sobrenome=" Polizel"></Membro>
+            <Membro nome="Antonio" sobrenome=" Polizel"></Membro>
+        </Familia>
     </div>
 , elemento)
