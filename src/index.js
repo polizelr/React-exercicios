@@ -90,14 +90,29 @@
 //Quando utiliza-se somente export, na importação tem-se que usar exatamente os mesmos nomes. No entanto, pode-se utilizar alias.
 
 //---------------------------------------------------------------------------------------------------------------------------------------------
+// import ReactDOM from 'react-dom'
+// import React from 'react'
+// import MultiElementos from './componentes/MultiElementos'
+
+// const elemento = document.getElementById('root')
+
+// ReactDOM.render(
+//     <div>
+//         <MultiElementos></MultiElementos>
+//     </div>
+// , elemento)
+
+//---------------------------------------------------------------------------------------------------------------------------------------------
+//Uma aplicação em react, nada mais é que uma árvore de componentes: tem-se um componente inicial e, a partir dele, incocam-se outros componentes e assim sucessivamente 
+//e a aplicação será composta com todos os componentes colaborando entre si
 import ReactDOM from 'react-dom'
 import React from 'react'
-import MultiElementos from './componentes/MultiElementos'
+import FamiliaSilva from './componentes/FamiliaSilva'
 
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
     <div>
-        <MultiElementos></MultiElementos>
+        <FamiliaSilva></FamiliaSilva>
     </div>
 , elemento)

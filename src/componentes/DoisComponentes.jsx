@@ -7,5 +7,5 @@ const CompA = props =>
 const CompB = props =>
     <h1>Segundo diz: {props.valor}</h1>
 
-//uma vez que não se está importando por padrão 
+//uma vez que não se está usando export default, não pode-se exportar uma função anônima
 export { CompA, CompB }
